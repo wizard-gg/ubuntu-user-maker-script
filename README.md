@@ -5,6 +5,14 @@
 - Ubuntu 22.04
 
 ## Usage
-    wget [&](https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/create_usaer.sh) && sudo chmod +x create_usaer.sh && ./create_usaer.sh
-    
-
+```bash 
+wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/create_usaer.sh && sudo chmod +x create_usaer.sh
+ ```
+ move script to /bin/
+```bash 
+mv ./create_usaer.sh /bin/user
+```
+run script from /bin/
+```bash 
+user
+```
