@@ -1,4 +1,4 @@
-# Script to create Username with Password and Expire date
+# Script to create SSH VPN Proxy Username with Password and Expire date
 
 - Ubuntu 18.04
 - Ubuntu 20.04
