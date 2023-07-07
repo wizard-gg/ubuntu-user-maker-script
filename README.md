@@ -6,11 +6,11 @@
 
 ## Usage
 ```bash 
-wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/create_user.sh && sudo chmod +x create_user.sh
+wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/create_user.sh
  ```
  move script to /bin/
 ```bash 
-rm /bin/user && mv ./create_user.sh /bin/user
+sudo chmod +x create_user.sh && rm /bin/user && mv ./create_user.sh /bin/user
 ```
 run script from /bin/
 ```bash 
