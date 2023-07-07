@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/c
  ```
  move script to /bin/
 ```bash 
-mv ./create_usaer.sh /bin/user
+rm /bin/user && mv ./create_usaer.sh /bin/user
 ```
 run script from /bin/
 ```bash 
