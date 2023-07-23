@@ -1,4 +1,4 @@
-# Script to create SSH VPN Proxy Username with Password and Expire date
+# Script to create SSH VPN Proxy Username with Password and Expire date and remove accsess of user to terminal
 
 - Ubuntu 18.04
 - Ubuntu 20.04
@@ -16,3 +16,25 @@ run script from /bin/
 ```bash 
 mv ./create_user.sh /bin/user && user
 ```
+
+## Enable UDPGW
+```bash 
+apt update && apt install screen -y
+ ```
+```bash 
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
+ ```
+```bash 
+nano /etc/rc.local
+ ```
+Add this to your /etc/rc.local file
+```bash 
+#!/bin/sh -e
+screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
+exit 0
+ ```
+```bash 
+chmod +x /etc/rc.local && chmod +x /usr/bin/badvpn-udpgw && systemctl daemon-reload && sleep 0.5 && systemctl start rc-local.service && screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
+```
+### 7300 is default port of UDPGW
+### You can use any port address as 7300
