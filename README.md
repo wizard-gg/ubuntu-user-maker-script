@@ -19,13 +19,13 @@ mv ./create_user.sh /bin/user && user
 
 ## Enable UDPGW
 ```bash 
-apt update && apt install screen -y
+sudo apt update && sudo apt install screen -y
  ```
 ```bash 
 wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
  ```
 ```bash 
-nano /etc/rc.local
+sudo nano /etc/rc.local
  ```
 Add this to your /etc/rc.local file
 ```bash 
