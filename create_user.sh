@@ -1,7 +1,7 @@
 read -p "Enter Username: " name
 read -p "Expire month: " exdate
 
-useradd $name -m -d /home/$name -s /bin/true
+useradd $name -m -d /home/$name -s /bin/nologin
 sudo passwd $name
 chage -E `date -d $exdate" month" +"%Y-%m-%d"` $name
 echo "-----------------------"
