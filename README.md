@@ -16,12 +16,9 @@ sudo chmod +x create_user.sh&&rm /bin/user&&mv ./create_user.sh /bin/user && use
 
 ## Enable UDPGW
 ```bash 
-sudo apt update&&sudo apt install screen -y&&wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
+sudo apt update&&sudo apt install screen -y&&wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"&&sudo nano /etc/rc.local
  ```
 
-```bash 
-sudo nano /etc/rc.local
- ```
 Add this to your /etc/rc.local file
 ```bash 
 #!/bin/sh -e
