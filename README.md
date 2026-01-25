@@ -3,27 +3,22 @@
 - Ubuntu 18.04
 - Ubuntu 20.04
 - Ubuntu 22.04
+- Ubuntu 24.04
 
 ## Usage
 ```bash 
 wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/create_user.sh
  ```
- move script to /bin/
+ move script to /bin/ and run it
 ```bash 
-sudo chmod +x create_user.sh && rm /bin/user
-```
-run script from /bin/
-```bash 
-mv ./create_user.sh /bin/user && user
+sudo chmod +x create_user.sh&&rm /bin/user&&mv ./create_user.sh /bin/user && user
 ```
 
 ## Enable UDPGW
 ```bash 
-sudo apt update && sudo apt install screen -y
+sudo apt update&&sudo apt install screen -y&&wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
  ```
-```bash 
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
- ```
+
 ```bash 
 sudo nano /etc/rc.local
  ```
