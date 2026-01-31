@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/wizard-gg/ubuntu-user-maker-script/main/c
  ```
  move script to /bin/ and run it
 ```bash 
-sudo chmod +x create_user.sh&&rm /bin/user&&mv ./create_user.sh /bin/user && user
+sudo chmod +x create_user.sh&&mv ./create_user.sh /bin/user && user
 ```
 
 ## Enable UDPGW
